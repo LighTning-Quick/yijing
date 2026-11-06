@@ -11,8 +11,11 @@
 !卦爻分析
 !卦爻分析/taichi-S/**
 
-# Include .gitignore itself
+# Include .gitignore itself and CI files
 !.gitignore
+!.github
+!.github/**
+!requirements.txt
 卦爻翻译/英语翻译分析/**
 卦爻翻译/阿语翻译/**
 卦爻分析/*
