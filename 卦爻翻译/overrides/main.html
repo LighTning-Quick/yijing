@@ -11,4 +11,20 @@
 
     gtag('config', 'G-DC08R78R28');
   </script>
+  <!-- 返回主页兴趣栏目 -->
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      var nav = document.querySelector('.md-header__inner');
+      if (nav && !document.getElementById('back-to-hobbies')) {
+        var link = document.createElement('a');
+        link.id = 'back-to-hobbies';
+        link.className = 'md-header__button';
+        link.href = 'https://lightning-quick.github.io/zh/activities/';
+        link.title = '返回兴趣栏目';
+        link.style.whiteSpace = 'nowrap';
+        link.textContent = '兴趣';
+        nav.insertBefore(link, nav.firstChild);
+      }
+    });
+  </script>
 {% endblock %}
