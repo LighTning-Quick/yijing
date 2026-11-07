@@ -33,7 +33,7 @@ jobs:
         run: mkdocs build --clean -f 卦爻翻译/mkdocs.yml
 
       - name: Add taichi-S page
-        run: cp -r 卦爻分析/taichi-S site/taichi-S
+        run: cp -r 卦爻分析/taichi-S site/taiji
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
